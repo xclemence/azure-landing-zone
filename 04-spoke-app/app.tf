@@ -47,11 +47,3 @@
 #     is_manual_connection           = false
 #   }
 # }
-
-# # resource "azurerm_private_dns_a_record" "spoke" {
-# #   name                = "spoke_app"
-# #   zone_name           = azurerm_private_dns_zone.spoke.name
-# #   resource_group_name = azurerm_resource_group.spoke_europe.name
-# #   ttl                 = 300
-# #   records             = [azurerm_private_endpoint.spoke_app.private_service_connection[0].private_ip_address]
-# # }

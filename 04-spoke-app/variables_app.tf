@@ -11,10 +11,3 @@ variable "dns_zones" {
     id = string
   }))
 }
-
-variable "spoke_dns_zone" {
-  type = object({
-    name                = string
-    resource_group_name = string
-  })
-}

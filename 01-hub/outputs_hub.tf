@@ -13,8 +13,10 @@ output "vet_hub" {
 
 output "dns_zones" {
   value = {
-    blob = {
-      id = azurerm_private_dns_zone.blob.id
+    for zone_key, zone_name in var.private_dns_zones : 
+    zone_key => {
+      id   = azurerm_private_dns_zone.zones[zone_key].id
+      name = azurerm_private_dns_zone.zones[zone_key].name
     }
   }
 }

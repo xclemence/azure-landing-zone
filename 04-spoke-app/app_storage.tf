@@ -26,10 +26,5 @@ resource "azurerm_private_endpoint" "storage" {
     subresource_names              = ["blob"]
     is_manual_connection           = false
   }
-
-  private_dns_zone_group {
-    name                 = "dns-group-sta"
-    private_dns_zone_ids = [var.dns_zones["blob"].id]
-  }
 }
 
