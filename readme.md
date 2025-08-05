@@ -32,7 +32,7 @@ The goal of this project is to deploy a landing zone on Azure that meets the fol
 ## Project Structure
 
 ```
-├── 01-hub/                 # Core hub infrastructure
+├── 01-hub/                # Core hub infrastructure
 ├── 02-auto-dns-register/  # DNS automation policies
 ├── 03-spoke-network/      # Spoke network infrastructure
 ├── 04-spoke-app/          # Application workload example
@@ -97,6 +97,15 @@ The goal of this project is to deploy a landing zone on Azure that meets the fol
    terraform destroy
    ```
 
+## Module Dependencies
+
+```
+01-hub (foundation)
+├── 02-auto-dns-register (requires dns_zones output)
+├── 03-spoke-network (requires vet_hub and hub_dns_ip outputs)
+│   ├── 04-spoke-app (requires subnet_id output)
+│   └── 05-spoke-test (requires subnet_id output)
+```
 
 
 ## References
