@@ -2,7 +2,6 @@
 
 **Purpose**: Implements Azure Policy for automatic DNS registration of private endpoints.
 
-**Location**: [02-auto-dns-register/](02-auto-dns-register/)
 
 **Key Resources**:
 - Custom Azure Policy definition for DNS registration

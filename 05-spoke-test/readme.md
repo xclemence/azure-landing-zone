@@ -1,8 +1,6 @@
 # 05-spoke-test Module
 **Purpose**: Test environment with a Linux VM for connectivity validation.
 
-**Location**: [05-spoke-test/](05-spoke-test/)
-
 **Key Resources**:
 - Linux Ubuntu VM with public IP
 - Network Security Group with SSH access

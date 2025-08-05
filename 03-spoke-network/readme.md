@@ -1,8 +1,6 @@
 # 03-spoke-network Module
 **Purpose**: Creates spoke virtual networks with hub connectivity and DNS configuration.
 
-**Location**: [03-spoke-network/](03-spoke-network/)
-
 **Key Resources**:
 - Spoke Virtual Network (`10.1.0.0/16`)
 - Default subnet for workloads

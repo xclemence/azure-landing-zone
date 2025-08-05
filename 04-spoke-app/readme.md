@@ -1,8 +1,6 @@
 # 04-spoke-app Module
 **Purpose**: Example application workload with private endpoint connectivity.
 
-**Location**: [04-spoke-app/](04-spoke-app/)
-
 **Key Resources**:
 - Resource group for application resources
 - Storage account with private endpoint
