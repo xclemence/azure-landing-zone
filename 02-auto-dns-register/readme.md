@@ -30,4 +30,4 @@ module "auto-dns-register" {
 - `identity_location` (string): Location for managed identity
 - `dns_zone_configs` (map): Configuration for each DNS zone policy
 
-**Policy Template**: Based on [doc/base-policy.json](doc/base-policy.json)
+**Policy Template**: Based on [doc/base-policy.json](../doc/base-policy.json)
